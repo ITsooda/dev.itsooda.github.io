@@ -8,7 +8,7 @@ subtitle: IT에 관한 모든 이야기
 description:
 keywords:
 author: Team ITsooda
-language: ko
+language: en
 timezone: Asia/Seoul
 
 # URL
@@ -78,4 +78,10 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: tranquilpeak
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+
