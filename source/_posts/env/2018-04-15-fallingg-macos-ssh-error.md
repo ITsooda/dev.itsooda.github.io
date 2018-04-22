@@ -3,9 +3,9 @@ title:  "맥os에서 ssh 접속시 등장하는 에러 해결"
 date:   2018-04-15
 authorId: fallingg
 comments: true
-tags: [fallingg, ssh, macos]
+tags: [fallingg, ssh, macos, env]
 layout: post
-categories: "fallingg"
+categories: "env"
 ---
 
 
