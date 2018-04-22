@@ -7,10 +7,21 @@ function jsonLd() {
   const page = this.page;
   const config = this.config;
   const theme = this.theme;
-  const authorEmail = theme.author.email;
-  const authorImage = theme.author.picture || (authorEmail ? this.gravatar(authorEmail) : null);
-  const authorLinks = theme.sidebar.author_links;
+  let authorEmail = theme.author.email;
+  let authorImage = theme.author.picture || (authorEmail ? this.gravatar(authorEmail) : null);
+  let authorLinks = theme.sidebar.author_links;
   const links = [];
+
+  let authorId;
+  let authorImgUrl;
+
+  if (page.hasOwnProperty('authorId')) {
+    authorId = page.authorId;
+    const authorObj = theme.authors[authorId];
+    authorLinks = authorObj.links;
+    authorEmail = authorObj.email;
+    authorImgUrl = authorObj.picture;
+  }
 
   if (authorLinks) {
     for (let key in authorLinks) {
@@ -26,7 +37,7 @@ function jsonLd() {
 
   const author = {
     '@type': 'Person',
-    name: config.author,
+    name: authorId? authorId :config.author,
     sameAs: links
   };
   // Google does not accept `Person` as item type for the publisher property
@@ -42,12 +53,14 @@ function jsonLd() {
     };
   }
 
+
   if (this.is_post()) {
     let images = [];
     schema = {
       '@context': 'http://schema.org',
       '@type': 'BlogPosting',
       author: author,
+      authorImgUrl: authorImgUrl,
       articleBody: this.strip_html(page.content),
       dateCreated: page.date.format(),
       dateModified: page.updated.format(),

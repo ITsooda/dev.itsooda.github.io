@@ -137,6 +137,19 @@ author:
     # E.g : `+Tranquilpeak` or `123812884128439`
     google_plus_business:
 
+
+authors:
+  junmon:
+    name: junmon
+    email: smartyjpark@gmail.com
+    picture: 'http://cphoto.asiae.co.kr/listimglink/6/2017072813523484896_2.png'
+    links:
+      github:
+        title: global.github
+        url: https://github.com/
+        icon: github
+
+
 # -------------
 # Customization
 # -------------
