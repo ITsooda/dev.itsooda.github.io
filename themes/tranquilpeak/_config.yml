@@ -148,6 +148,15 @@ authors:
         title: global.github
         url: https://github.com/
         icon: github
+  fallingg:
+      name: fallingg
+      email: smartyjpark@gmail.com
+      picture: 'http://cphoto.asiae.co.kr/listimglink/6/2017072813523484896_2.png'
+      links:
+        github:
+          title: global.github
+          url: https://github.com/
+          icon: github
 
 
 # -------------
