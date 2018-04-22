@@ -9,5 +9,8 @@
     <% if ((post.categories) && (post.categories.length > 0)) { %>
         <span><%= __('post.categorized_in')  %> </span>
         <%- partial('category', {categories: post.categories})%>
+        <% if (post.authorId) { %>
+            <span>, by <%= post.authorId %><span>
+        <% } %>
     <% } %>
 </div>
