@@ -139,18 +139,45 @@ author:
 
 
 authors:
-  junmon:
-    name: junmon
-    email: smartyjpark@gmail.com
-    picture: 'http://cphoto.asiae.co.kr/listimglink/6/2017072813523484896_2.png'
-    links:
-      github:
-        title: global.github
-        url: https://github.com/
-        icon: github
+  ITsooda:
+        name: ITsooda
+        email: itsooda@gmail.com
+        picture: 'http://cphoto.asiae.co.kr/listimglink/6/2017072813523484896_2.png'
+        links:
+          github:
+            title: global.github
+            url: https://github.com/
+            icon: github
+  준몬:
+      name: 준몬
+      email: smartyjpark@gmail.com
+      picture: 'http://cphoto.asiae.co.kr/listimglink/6/2017072813523484896_2.png'
+      links:
+        github:
+          title: global.github
+          url: https://github.com/
+          icon: github
   fallingg:
       name: fallingg
-      email: smartyjpark@gmail.com
+      email: fallingg@gmail.com
+      picture: 'http://cphoto.asiae.co.kr/listimglink/6/2017072813523484896_2.png'
+      links:
+        github:
+          title: global.github
+          url: https://github.com/
+          icon: github
+  수달:
+      name: 수달
+      email: kimsh12191@gmail.com
+      picture: 'http://cphoto.asiae.co.kr/listimglink/6/2017072813523484896_2.png'
+      links:
+        github:
+          title: global.github
+          url: https://github.com/
+          icon: github
+  earl:
+      name: earl
+      email:
       picture: 'http://cphoto.asiae.co.kr/listimglink/6/2017072813523484896_2.png'
       links:
         github:
